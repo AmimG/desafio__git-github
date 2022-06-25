@@ -1,791 +1,815 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Secular+One&display=swap");
 /*
  #1B4EAB #11306B #266BEB #2870F7 #215FD1 */
 /*general*/
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-h1{
-    font-size: 4rem;
+h1 {
+  font-size: 4rem;
 }
-h2{
-    font-size: 3rem;
+h2 {
+  font-size: 3rem;
 }
-h3{
-    font-size: 2.5rem;
+h3 {
+  font-size: 2.5rem;
 }
-h4{
-    font-size: 1.5rem;
+h4 {
+  font-size: 1.5rem;
 }
-p{
-    font-size: 2rem;
+p {
+  font-size: 2rem;
 }
-.body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(231, 231, 245);
-    overflow: hidden;
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(231, 231, 245);
+  overflow: hidden;
 }
 /*nav*/
-.nav{
-    background-image: url(../multimedia/images/bgnav.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    padding-top: 5px;
-    position: sticky;
-    border-bottom: 2.5px solid black;
-    display: flex;
-    justify-content: center;
+.nav {
+  background-image: url(../multimedia/images/bgnav.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  padding-top: 5px;
+  position: sticky;
+  border-bottom: 2.5px solid black;
+  display: flex;
+  justify-content: center;
 }
-.nav div{
-    width: auto;
+.nav div {
+  width: auto;
 }
-.nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
-.nav a:hover{
-    color: black;
-    font-weight: 800;
-    transition-delay: 250ms;
+.nav a:hover {
+  color: black;
+  font-weight: 800;
+  transition-delay: 250ms;
 }
-.nav span{
-    font-family: 'Secular One', sans-serif;
-    font-size: 3.8rem;
-    text-transform: uppercase;
-    text-align: center;
+.nav span {
+  font-family: "Secular One", sans-serif;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  text-align: center;
 }
-.nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-}    
-.nav li{
-    list-style: none;
-    text-align: center;
-    align-self: center;
-    margin-block: 20px;
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.nav li {
+  list-style: none;
+  text-align: center;
+  align-self: center;
+  margin-block: 20px;
+}
+.nav li a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 300ms;
+}
+.nav li a:hover {
+  background-size: 100% 2px;
 }
 /*header inicio-contacto-perfil*/
-.header{
-    padding: 5px;
-    margin-block: 30px;
-    display: flex;
-    justify-content: center;
-    background-image: url(../multimedia/images/bghd.webp);
-    color: white;
+.header {
+  padding: 5px;
+  margin-block: 30px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../multimedia/images/bghd.webp);
+  color: white;
 }
-.header__div{
-    align-self: center;
-    text-align: center;
-    overflow: hidden;
-    width: auto;
+.header__div {
+  align-self: center;
+  text-align: center;
+  overflow: hidden;
+  width: auto;
 }
 /*header mercado de fichajes-noticias*/
-.header__news{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+.header__news {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
-.header__news2{
-    align-self: center;
-    text-align: justify;
-    overflow: hidden;
-    width: 45%;
+.header__news2 {
+  align-self: center;
+  text-align: justify;
+  overflow: hidden;
+  width: 45%;
 }
-.header__news span{
-    color: #11306B;
-    font-size: 1.5rem;
+.header__news span {
+  color: #11306b;
+  font-size: 1.5rem;
 }
 /*main index*/
 /*article index*/
-.section__index{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin-bottom: 40px;
-    background-image: url(../multimedia/images/bg.webp);
+.section__index {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-image: url(../multimedia/images/bg.webp);
 }
-.section__index h2{
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    width: 25%;
-    align-self: center;
-    border-bottom: solid;
-    font-size: 2.5rem;
+.section__index h2 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  width: 25%;
+  align-self: center;
+  border-bottom: solid;
+  font-size: 2.5rem;
 }
-.div_index{
-    display: flex;
-    padding: 10px;
-    align-self: center;
-    justify-content: space-evenly;
-    width: 80%;
+.div_index {
+  display: flex;
+  padding: 10px;
+  align-self: center;
+  justify-content: space-evenly;
+  width: 80%;
 }
-.article__index{
-    width: 40%;
-    display: flex;
+.article__index {
+  width: 40%;
+  display: flex;
 }
-.article__index a{
-    text-align: center;
-    align-self: center;
-    margin: auto;
-    text-decoration: none;
-    font-size: 2.2rem;
-    color: white;
+.article__index a {
+  text-align: center;
+  align-self: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: white;
 }
-.article__index a:hover{
-    color: #FAC200;
-    font-weight: 500;
-    transition-delay: 150ms;
+.article__index a:hover {
+  color: #fac200;
+  font-weight: 500;
+  transition-delay: 150ms;
 }
-.div_index2{
-    display: flex;
-    align-self: center;
-    flex-direction: column;
+.div_index2 {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
 }
 /*article index2*/
-.article__index2{
-    width: 40%;
-    align-self: center;
-    overflow: hidden;
-    background-color: rgb(231, 231, 245);
-    padding: 5px;
-    box-shadow: 2px 2px black;
+.article__index2 {
+  width: 40%;
+  align-self: center;
+  overflow: hidden;
+  background-image: url(../multimedia/images/bghd.webp);
+  padding: 5px;
+  box-shadow: 2px 2px black;
 }
-.article__index2 a{
-    text-align: center;
-    align-self: center;
-    margin: auto;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+.article__index2 a {
+  text-align: center;
+  align-self: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
 }
-.article__index2 a:hover{
-    color: rgb(157, 0, 0);
-    transition-delay: 150ms;
-    font-weight: bold;
+.article__index2 a:hover {
+  color: #fac200;
+  transition-delay: 150ms;
+  font-weight: 400;
 }
-.article__index2 img{
-    margin-bottom: 5px;
+.article__index2 img {
+  margin-bottom: 5px;
 }
-.div_index3{
-    display: flex;
-    justify-content: space-around;
+.div_index3 {
+  display: flex;
+  justify-content: space-around;
 }
-.article__mm{
-    width: 80%;
-    box-shadow: 2px 2px black;
+.div_index3 a {
+  width: 55%;
 }
-.article__mm2{
-    min-width: 40%;
-    max-width: 40.1%;
-    box-shadow: 2px 2px black;
+.article__mm {
+  width: 80%;
+  box-shadow: 2px 2px black;
+}
+.article__mm:hover {
+  transform: scale(0.985, 0.985);
+  transition: 500ms;
+  cursor: pointer;
+}
+.article__mm2 {
+  width: 40%;
+  box-shadow: 2px 2px black;
+}
+.article__mm2:hover {
+  transform: scale(0.985, 0.985);
+  transition: 500ms;
+  cursor: pointer;
 }
 /*main mercado de fichajes-noticias*/
-.section__news{
-    display: flex;
-    flex-direction: column;
+.section__news {
+  display: flex;
+  flex-direction: column;
 }
-.section__news h2{
-    align-self: center;
-    text-align: justify;
-    overflow: hidden;
-    width: 45%;
-    font-size: 1.5rem;
-    color: #11306B;
-    font-weight: 400;
+.section__news h2 {
+  align-self: center;
+  text-align: justify;
+  overflow: hidden;
+  width: 45%;
+  font-size: 1.5rem;
+  color: #11306b;
+  font-weight: 400;
 }
-.article__news{
-    align-self: center;
-    text-align: justify;
-    overflow: hidden;
-    height: 22%;
-    width: 50%;
-    margin-block: 5px;
+.article__news {
+  align-self: center;
+  text-align: justify;
+  overflow: hidden;
+  height: 22%;
+  width: 50%;
+  margin-block: 5px;
 }
-.article__div__mm{
-    padding: 10px;
-    text-align: center;
+.article__div__mm {
+  padding: 10px;
+  text-align: center;
 }
-.article__news h3{
-    margin-bottom: 20px;
+.article__news h3 {
+  margin-bottom: 20px;
 }
-.article__news p{
-    margin-bottom: 20px;
+.article__news p {
+  margin-bottom: 20px;
 }
 /*twitter*/
-.div__twt{
-    display: flex;
-    max-width: 550px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+.div__twt {
+  display: flex;
+  max-width: 550px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*main contacto-perfil*/
-.main__ctc{
-    width: auto;
-    display: flex;
-    margin-bottom: 30px;
+.main__ctc {
+  width: auto;
+  display: flex;
+  margin-bottom: 30px;
 }
-.section__ctc{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+.section__ctc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.article__ctc{
-    display: flex;
-    flex-direction: column;  
-    padding: 10px;
-    margin-block: 10px;
+.article__ctc {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-block: 10px;
 }
-.article__ctc h3{
-    text-align: center;
-    align-self: center;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: black;
-    font-weight: 400;
-    width: 20%;
-    border-bottom: solid;
+.article__ctc h3 {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+  font-weight: 400;
+  width: 20%;
+  border-bottom: solid;
 }
 /*main resultados*/
-.section__rsl{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin-bottom: 40px;
+.section__rsl {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 40px;
 }
-.rsl__ttl{
-    width: 80%;
-    display: flex;
-    align-self: center;
+.rsl__ttl {
+  width: 80%;
+  display: flex;
+  align-self: center;
 }
-.rsl__ttl2{
-    text-align: justify;
+.rsl__ttl2 {
+  text-align: justify;
 }
-.rsl__ttl2 h2{
-    font-size: 1.6rem;
-    margin-bottom: 1px;
+.rsl__ttl2 h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1px;
 }
-.rsl__ttl2 span{
-    font-size: 1.4rem;
+.rsl__ttl2 span {
+  font-size: 1.4rem;
 }
-.rsl__div{
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    background-image: url(../multimedia/images/bg.webp);
-    box-shadow: 2px 2px black;
+.rsl__div {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  background-image: url(../multimedia/images/bg.webp);
+  box-shadow: 2px 2px black;
 }
-.rsl__div2{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 10px;
-    margin-block: 10px;
-    background-image: url(../multimedia/images/bgnav.webp);
-    box-shadow: 2px 2px black;
+.rsl__div2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px;
+  margin-block: 10px;
+  background-image: url(../multimedia/images/bgnav.webp);
+  box-shadow: 2px 2px black;
 }
-.rsl__div3{
-    width: 80%;
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    margin-block: 5px;
+.rsl__div3 {
+  width: 80%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-block: 5px;
 }
-.rsl__div3 span{
-    color: white;
-    font-weight: 400;
-    font-size: 1.2rem;
+.rsl__div3 span {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 /*formulario contacto-perfil*/
-.form__ctc{
-    width: 100%;
-    height: auto;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
+.form__ctc {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
-.form__ctc2{
-    width: 40%;
-    padding: 20px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../multimedia/images/bg.webp);
-    box-shadow: 2px 2px black;
+.form__ctc2 {
+  width: 40%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../multimedia/images/bg.webp);
+  box-shadow: 2px 2px black;
 }
-.form__ctc3{
-    align-self: center;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-weight: 400;
+.form__ctc3 {
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 400;
 }
-.form__ctc3 label{
-    font-size: 1.2rem;  
-    margin-bottom: 5px;
+.form__ctc3 label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
-.form__ctc3 input{
-    box-shadow: 3px 3px black;
-    margin-bottom: 10px;
-    border-style: none;
+.form__ctc3 input {
+  box-shadow: 3px 3px black;
+  margin-bottom: 10px;
+  border-style: none;
 }
-.form__ctc3 textarea{
-    box-shadow: 3px 3px black;
-    border-style: none;
-    margin-bottom: 10px;
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 80%;
-    min-height: 60%; 
+.form__ctc3 textarea {
+  box-shadow: 3px 3px black;
+  border-style: none;
+  margin-bottom: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 80%;
+  min-height: 60%;
 }
-.form__button{
-    display: flex;
-    justify-content: center;
+.form__button {
+  display: flex;
+  justify-content: center;
 }
-.button{
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 1.2rem;
-    height: 25px;
-    background-color: beige;
-    box-shadow: 3px 3px black;
+.button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  height: 25px;
+  background-color: beige;
+  box-shadow: 3px 3px black;
 }
-.button span{
-    margin: 25px;
+.button span {
+  margin: 25px;
 }
-.button:hover{
-    background-color: green;
-    transition: 300ms;
+.button:hover {
+  background-color: green;
+  transition: 300ms;
 }
 /*formulario contacto dirección*/
-.form__addrs{
-    width: 40%;
-    padding: 20px;
-    align-self: center;
-    display: flex;
-    background-image: url(../multimedia/images/bg.webp);
-    box-shadow: 2px 2px black;
-    overflow: hidden;
+.form__addrs {
+  width: 40%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  background-image: url(../multimedia/images/bg.webp);
+  box-shadow: 2px 2px black;
+  overflow: hidden;
 }
-.form__addrs2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px black;
+.form__addrs2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px black;
 }
 /*formulario perfil*/
-.form__perfil{
-    width: 25%;
-    padding: 20px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../multimedia/images/bg.webp);
-    box-shadow: 2px 2px black;
+.form__perfil {
+  width: 25%;
+  padding: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../multimedia/images/bg.webp);
+  box-shadow: 2px 2px black;
 }
-.form__perfil2{
-    align-self: center;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-weight: 400;
-    margin-bottom: 10px;
-    margin-top: 20px;
+.form__perfil2 {
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
-.form__perfil2 label{
-    text-align: justify;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+.form__perfil2 label {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
-.form__perfil2 input{
-    box-shadow: 2px 2px black;
-    margin-bottom: 10px;
-    border-style: none;
+.form__perfil2 input {
+  box-shadow: 2px 2px black;
+  margin-bottom: 10px;
+  border-style: none;
 }
 /*formulario img perfil*/
-.form__img{
-    text-align: center;
-    margin-bottom: 10px;
+.form__img {
+  text-align: center;
+  margin-bottom: 10px;
 }
 /*formulario checkbox perfil*/
-.form__checkbox{
-    display: flex;
+.form__checkbox {
+  display: flex;
 }
-.form__checkbox input{
-    margin-right: 10px;
+.form__checkbox input {
+  margin-right: 10px;
 }
 /*aside mercado de fichajes-noticias*/
-.aside{
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
-    margin-block: 10px;
-    padding: 10px;
-    background-image: url(../multimedia/images/bg.webp);
+.aside {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 10px;
+  padding: 10px;
+  background-image: url(../multimedia/images/bg.webp);
 }
-.aside__div{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(193, 207, 251);
-    box-shadow: 2px 2px black;
-    border: none;
-    border-radius: 2rem;
+.aside__div {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(193, 207, 251);
+  box-shadow: 2px 2px black;
+  border: none;
+  border-radius: 2rem;
 }
-.aside__div:hover{
-    background-color: #FAC200;
-    transition: 300ms;
+.aside__div:hover {
+  background-color: #fac200;
+  transition: 300ms;
 }
-.aside__div a{
-    align-self: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: 400;
+.aside__div a {
+  align-self: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400;
 }
 /*footer*/
-.footer{
-    width: auto;
-    bottom: 0;
-    background-color: #1A1D26;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: auto;
-    font-size: 1.4rem;
-    color: white;
+.footer {
+  width: auto;
+  bottom: 0;
+  background-color: #1a1d26;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  font-size: 1.4rem;
+  color: white;
 }
 .footer h4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 /*footer dirección*/
-.footer__addrs{
-    width: 20%;
-    text-align: center;
-    padding: 20px;
+.footer__addrs {
+  width: 20%;
+  text-align: center;
+  padding: 20px;
 }
 
-.footer__addrs address{
-    font-style: normal;
-    color: white;
+.footer__addrs address {
+  font-style: normal;
+  color: white;
 }
 /*footer redes*/
-.footer__redes{
-    width: 20%;
-    text-align: center;
-    padding: 10px;
+.footer__redes {
+  width: 20%;
+  text-align: center;
+  padding: 10px;
 }
-.div__redes{
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.div__redes {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
-.div__redes a{
-    align-self: center;
-    text-decoration: none;
-    margin-right: 10px;
+.div__redes a {
+  align-self: center;
+  text-decoration: none;
+  margin-right: 10px;
 }
-.div__redes2{
-    height: 30%;
-    display: flex;
-    justify-content: center;
+.div__redes2 {
+  height: 30%;
+  display: flex;
+  justify-content: center;
 }
-.div__redes2 a{
-    align-self: center;
-    text-decoration: none;
-    margin-right: 10px;
+.div__redes2 a {
+  align-self: center;
+  text-decoration: none;
+  margin-right: 10px;
 }
 /*footer nav*/
-.footer__nav *{
-    padding-left: 0;
+.footer__nav * {
+  padding-left: 0;
 }
-.footer__nav{
-    width: 20%;
-    text-align: center;
-    padding: 10px;
+.footer__nav {
+  width: 20%;
+  text-align: center;
+  padding: 10px;
 }
-.footer__nav li{
-    list-style: none;
-    margin-top: 5px;
+.footer__nav li {
+  list-style: none;
+  margin-top: 5px;
 }
-.footer__nav a{
-    text-decoration: none;
-    color: white;
+.footer__nav a {
+  text-decoration: none;
+  color: white;
 }
-.footer__nav a:hover{
-    color: yellow;
-    font-weight: 500;
-    transition-delay: 250ms;
+.footer__nav a:hover {
+  color: yellow;
+  font-weight: 500;
+  transition-delay: 250ms;
 }
 /*footer legal*/
-.footer__legal{
-    width: 20%;
+.footer__legal {
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+}
+.footer__legal span {
+  font-size: 1.4rem;
+}
+/*animaciones*/
+
+@media (max-width: 768px) {
+  /*nav*/
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav span {
+    font-size: 3rem;
+  }
+  .nav ul {
+    width: 90%;
+  }
+  /*header*/
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  /*section index*/
+  .div_index {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .section__index h2 {
+    width: auto;
+  }
+  .article__index {
+    width: 80%;
+    display: flex;
+    align-self: center;
+  }
+  .article__index2 {
+    margin-top: 10px;
+    width: auto;
+  }
+  .article__div {
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .div_index3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 300px;
+  }
+  .div_index3 a {
+    width: 100%;
+  }
+  .article__mm2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  /*footer addres*/
+  .footer__addrs address {
+    font-size: 1.2rem;
+  }
+  /*footer legal*/
+  .footer__legal {
+    display: none;
+  }
+  /*Resultados*/
+  .section__rsl {
+    width: 100%;
+  }
+  .rsl__ttl {
+    width: 100%;
+  }
+  .rsl__div {
+    width: 100%;
+  }
+  .rsl__div2 {
+    width: 28%;
+    padding: 5px;
+    margin-block: 5px;
+  }
+  .rsl__div3 {
+    width: 100%;
+  }
+  /*contacto-perfil*/
+  .article__ctc h3 {
+    width: auto;
+  }
+  .form__ctc {
+    width: 100%;
+  }
+  .form__ctc2 {
+    width: 85%;
+  }
+  .form__ctc3 {
+    width: 80%;
+  }
+  .button span {
+    margin: 25px;
+  }
+  /*formulario contacto dirección*/
+  .form__addrs {
+    width: 85%;
+  }
+  .form__addrs2 {
+    width: 100%;
+  }
+  /*formulario perfil*/
+  .form__perfil {
+    width: 85%;
+  }
+  /*header mercado de fichajes-noticias*/
+  .header__news2 {
+    width: 85%;
+  }
+  /*main mercado de fichajes-noticias*/
+  .section__news h2 {
+    width: 85%;
+  }
+  .article__news {
+    height: auto;
+    width: 85%;
+  }
+  .article__news iframe {
+    max-width: 500px;
+  }
+  /*twitter*/
+  .div__twt {
+    display: none;
+  }
+  /*aside*/
+  .aside__div {
+    width: 25%;
+  }
+  .aside__div a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  /*Resultados*/
+  .rsl__ttl {
+    width: 95%;
+  }
+  .rsl__div {
+    width: 98%;
+  }
+  .rsl__div3 span {
     text-align: center;
-    padding: 10px;
+    align-self: center;
+  }
+  /*header mercado de fichajes-noticias*/
+  .header__news2 {
+    width: 85%;
+    text-align: center;
+  }
+  /*main mercado de fichajes-noticias*/
+  .section__news {
+    text-align: center;
+  }
+  .article__news {
+    text-align: center;
+  }
+  .article__news iframe {
+    max-width: 400px;
+  }
+  /*aside*/
+  .aside__div {
+    width: 20%;
+  }
+  /*footer addres*/
+  .footer__addrs address {
+    font-size: 1rem;
+  }
+  .div_index3 a {
+    font-size: 1.2rem;
+  }
 }
-.footer__legal span{
-    font-size: 1.4rem;
+@media (max-width: 480px) {
+  /*nav*/
+  .nav ul {
+    width: 100%;
+  }
+  .nav li {
+    width: 100%;
+    margin-inline: 1%;
+  }
+  /*header*/
+  .header h1 {
+    font-size: 2rem;
+  }
+  /*section index*/
+  .section__index h2 {
+    font-size: 2rem;
+  }
+  .div_index2 a {
+    font-size: 2rem;
+  }
+  .div_index3 a {
+    font-size: 1rem;
+  }
+  /*footer addres*/
+  .footer__addrs {
+    display: none;
+  }
+  /*Resultados*/
+  .section__rsl {
+    width: 100%;
+  }
+  .rsl__ttl {
+    width: 100%;
+  }
+  .rsl__div {
+    width: 95%;
+  }
+  .rsl__div2 {
+    width: 28%;
+    padding: 5px;
+  }
+  .rsl__div3 span {
+    font-size: 0.8rem;
+  }
+  /*header mercado de fichajes-noticias*/
+  .header__news2 h1 {
+    font-size: 2rem;
+  }
+  /*main mercado de fichajes-noticias*/
+  .article__news h3 {
+    font-size: 2rem;
+  }
+  .article__news p {
+    font-size: 1.5rem;
+  }
+  .article__news iframe {
+    max-width: 300px;
+  }
+  /*aside*/
+  .aside__div {
+    width: 20%;
+  }
+  .aside__div a {
+    font-size: 1.2rem;
+  }
 }
-@media (max-width:768px){
-    /*nav*/
-    .nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav span{
-        font-size: 3rem;
-    }
-    .nav ul{
-        width: 90%;
-    }
-    /*header*/
-    .header h1{
-        font-size: 3.5rem;
-    }
-    /*section index*/
-    .div_index{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-    }
-    .section__index h2{
-        width: auto;
-    }
-    .article__index{
-        width: 80%;
-        display: flex;
-        align-self: center;
-    }
-    .article__index2{
-        margin-top: 10px;
-        width: auto;
-    }
-    .article__div{
-        width: 96%;
-        display: flex;
-        justify-content: space-around;
-        margin: auto;
-    }
-    .div_index3{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        max-width: 300px;
-    }
-    .article__mm2{
-        width: 100%;
-        max-width: 100%;
-    }
-    /*footer addres*/
-    .footer__addrs address{
-        font-size: 1.2rem;
-    }
-    /*footer legal*/
-    .footer__legal{
-        display: none;
-    }
-    /*Resultados*/
-    .section__rsl{
-        width: 100%;
-    }
-    .rsl__ttl{
-        width: 100%;
-    }
-    .rsl__div{
-        width: 100%;
-    }
-    .rsl__div2{
-        width: 28%;
-        padding: 5px;
-        margin-block: 5px;
-    }
-    .rsl__div3{
-        width: 100%;
-    }
-    /*contacto-perfil*/
-    .article__ctc h3{
-        width: auto;
-    }
-    .form__ctc{
-        width: 100%;
-    }
-    .form__ctc2{
-        width: 85%;
-    }
-    .form__ctc3{
-        width: 80%;
-    }
-    .button span{
-        margin: 25px;
-    }
-    /*formulario contacto dirección*/
-    .form__addrs{
-        width:85%;
-    }
-    .form__addrs2{
-        width: 100%;
-    }
-    /*formulario perfil*/
-    .form__perfil{
-        width: 85%;
-    }
-    /*header mercado de fichajes-noticias*/
-    .header__news2{
-        width: 85%;
-    }
-    /*main mercado de fichajes-noticias*/
-    .section__news h2{
-        width: 85%;
-    }
-    .article__news{
-        height: auto;
-        width: 85%;
-    }
-    .article__news iframe{
-        max-width: 500px;
-    }
-    /*twitter*/
-    .div__twt{
-        display: none;
-    }
-    /*aside*/
-    .aside__div{
-        width: 25%;
-    }
-    .aside__div a{
-        font-size: 1.2rem;
-    }
-
-}
-@media (max-width:600px){
-    /*Resultados*/
-    .rsl__ttl{
-        width: 95%;
-    }
-    .rsl__div{
-        width: 98%;
-    }
-    .rsl__div3 span{
-        text-align: center;
-        align-self: center;
-    }
-    /*header mercado de fichajes-noticias*/
-    .header__news2{
-        width: 85%;
-        text-align: center;
-    }
-    /*main mercado de fichajes-noticias*/
-    .section__news{
-        text-align: center;
-    }
-    .article__news{
-        text-align: center;
-    }
-    .article__news iframe{
-        max-width: 400px;
-    }
-    /*aside*/
-    .aside__div{
-        width: 20%;
-    }
-    /*footer addres*/
-    .footer__addrs address{
-        font-size: 1rem;
-    }
-    .div_index3 a{
-        font-size: 1.2rem;
-    }
-}
-@media (max-width:480px){
-    /*nav*/
-    .nav ul{
-        width: 100%;
-    }
-    .nav li{
-        width: 100%;
-        margin-inline: 1%;
-    }
-    /*header*/
-    .header h1{
-        font-size: 2rem;
-    }
-    /*section index*/
-    .section__index h2{
-        font-size: 2rem;
-    }
-    .div_index2 a{
-       font-size: 2rem;
-    }
-    .div_index3 a{
-        font-size: 1rem;
-    }
-    /*footer addres*/
-    .footer__addrs{
-        display: none;
-    }
-    /*Resultados*/
-    .section__rsl{
-        width: 100%;
-    }
-    .rsl__ttl{
-        width: 100%;
-    }
-    .rsl__div{
-        width: 95%;
-    }
-    .rsl__div2{
-        width: 28%;
-        padding: 5px;
-    }
-    .rsl__div3 span{
-        font-size: 0.8rem;
-    }
-    /*header mercado de fichajes-noticias*/
-    .header__news2 h1{
-        font-size: 2rem;
-    }
-    /*main mercado de fichajes-noticias*/
-    .article__news h3{ 
-        font-size: 2rem;
-    }
-    .article__news p{ 
-        font-size: 1.5rem;
-    }
-    .article__news iframe{
-        max-width: 300px;
-    }
-    /*aside*/
-    .aside__div{
-        width: 20%;
-    }
-    .aside__div a{
-        font-size: 1.2rem;
-    }
-}
-
-
